@@ -1,4 +1,4 @@
-# Website Pribadi - Muhammad Dharul Nafats
+# Website Pribadi - Alung Riadi
 
 Tugas 3 Komputasi Awan: deployment website statis dengan GitHub Pages.
 
@@ -6,7 +6,6 @@ Tugas 3 Komputasi Awan: deployment website statis dengan GitHub Pages.
 - `index.html` - Beranda (nama, NIM, foto, deskripsi)
 - `materi.html` - Materi Komputasi Awan
 - `portofolio.html` - Portofolio Tugas 1 dan Tugas 2
-- `warung.html`, `menu.html`, `staff.html`, `lowongan.html`, `biodata.html` - proyek Warung Nasi Bakar (proyek sebelumnya)
 - `assets/css/`, `assets/images/` - gaya dan gambar
 
 ## Sebelum dipublikasikan
