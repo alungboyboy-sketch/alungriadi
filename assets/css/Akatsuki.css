@@ -1,0 +1,265 @@
+/* =====================================================
+   Tema Akatsuki: hitam, merah crimson, abu awan
+   Muat SETELAH site.css
+   ===================================================== */
+:root {
+  --ink: #f1ecec;
+  --ink-soft: #a9a3a7;
+  --sky: #141417;
+  --sky-deep: #2d2d33;
+  --paper: #0a0a0c;
+  --cobalt: #c1121f;
+  --cobalt-dark: #ff6670;
+  --sun: #dfe3e6;
+  --line: #26262c;
+  --surface: #131316;
+  --crimson: #c1121f;
+  --crimson-deep: #8f0d17;
+  --cloud: #dfe3e6;
+}
+
+::selection { background: var(--crimson); color: #fff; }
+
+body.site {
+  background:
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(193, 18, 31, .10), transparent 70%),
+    var(--paper);
+  color: var(--ink);
+}
+a:focus-visible, .btn:focus-visible, .navbar-toggler:focus-visible { outline-color: var(--cloud); }
+
+/* ---------- navbar ---------- */
+.navbar-site {
+  background: rgba(10, 10, 12, .92);
+  border-bottom: 1px solid var(--line);
+}
+.navbar-site .navbar-brand { color: #fff; }
+.navbar-site .corp-img { border-color: var(--cloud); }
+.navbar-site .nav-link { color: var(--ink-soft); }
+.navbar-site .nav-link:hover { color: #fff; }
+.navbar-site .nav-link.active { color: #fff; }
+.navbar-site .nav-link:not(.dropdown-toggle)::after { background: var(--crimson); }
+.navbar-site .navbar-toggler { border-color: var(--sky-deep); }
+.navbar-site .navbar-toggler-icon { filter: invert(1); }
+.navbar-site .dropdown-menu { background: var(--surface); border-color: var(--line); box-shadow: 0 16px 36px rgba(0, 0, 0, .5); }
+.navbar-site .dropdown-item { color: var(--ink-soft); }
+.navbar-site .dropdown-item:hover,
+.navbar-site .dropdown-item:focus { background: rgba(193, 18, 31, .18); color: #fff; }
+
+/* ---------- hero ---------- */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-color: #0a0a0c;
+  background-image:
+    radial-gradient(ellipse 55% 80% at 88% 35%, rgba(193, 18, 31, .30), transparent 70%),
+    linear-gradient(180deg, #0c0c0f 0%, #08080a 100%);
+  background-size: auto, auto;
+  border-bottom: 1px solid var(--crimson-deep);
+}
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  background: url("../images/akatsuki-cloud.svg") no-repeat center / contain;
+}
+.hero::before { width: 340px; height: 230px; left: -70px; bottom: -40px; opacity: .22; transform: rotate(-6deg); }
+.hero::after  { width: 200px; height: 135px; right: 6%; top: 28px; opacity: .16; transform: scaleX(-1) rotate(8deg); }
+.hero > .container { position: relative; z-index: 1; }
+
+.photo-wrap::before { border-color: var(--crimson); }
+.profile-photo {
+  border-color: var(--cloud);
+  box-shadow: 0 24px 56px rgba(193, 18, 31, .35);
+}
+.status { color: var(--cobalt-dark); }
+.status::before { background: var(--crimson); }
+.hero h1 { color: #fff; }
+.nim-line { color: var(--ink-soft); }
+.nim-line .ph { color: var(--cloud); }
+.hero .lead { color: var(--ink-soft); }
+.tag-list li {
+  color: var(--ink);
+  background: rgba(255, 255, 255, .04);
+  border-color: var(--sky-deep);
+}
+
+/* ---------- tombol ---------- */
+.btn-gold {
+  background: var(--crimson);
+  border-color: var(--crimson);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(193, 18, 31, .35);
+}
+.btn-gold:hover { background: var(--crimson-deep); border-color: var(--crimson-deep); color: #fff; }
+.btn-outline-gold {
+  background: transparent;
+  border-color: #3b3b42;
+  color: var(--ink);
+}
+.btn-outline-gold:hover { background: var(--cloud); border-color: var(--cloud); color: #0a0a0c; }
+
+/* ---------- ringkasan ---------- */
+.info-card {
+  background: var(--surface);
+  border-color: var(--line);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .55);
+}
+.info-item { border-color: var(--line); }
+.info-item > i { color: var(--crimson); }
+.info-label { color: var(--ink-soft); }
+.info-value { color: var(--ink); }
+
+/* ---------- jelajah ---------- */
+.section-title { color: #fff; }
+.section-title::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin-top: .75rem;
+  background: var(--crimson);
+}
+.section-sub { color: var(--ink-soft); }
+
+.card-dark {
+  background: var(--surface);
+  border-color: var(--line);
+  color: var(--ink);
+}
+.card-dark:hover {
+  border-color: var(--crimson);
+  box-shadow: 0 20px 44px rgba(193, 18, 31, .22);
+}
+.card-title { color: #fff; }
+.card-text { color: var(--ink-soft); }
+.card-num { color: #34343b; }
+.icon-badge { background: rgba(193, 18, 31, .16); color: #ff6670; }
+.col-md-4:nth-child(2) .icon-badge,
+.col-lg-4:nth-child(2) .icon-badge,
+.col-lg-6:nth-child(2) > .card .icon-badge { background: rgba(223, 227, 230, .10); color: var(--cloud); }
+.col-md-4:nth-child(3) .icon-badge,
+.col-lg-4:nth-child(3) .icon-badge { background: rgba(193, 18, 31, .16); color: #ff6670; }
+
+/* ---------- footer ---------- */
+.site-footer {
+  position: relative;
+  overflow: hidden;
+  background: #050506;
+  border-top: 1px solid var(--crimson-deep);
+  color: var(--ink-soft);
+}
+.site-footer::before {
+  content: "";
+  position: absolute;
+  right: -30px;
+  bottom: 30px;
+  width: 280px;
+  height: 190px;
+  background: url("../images/akatsuki-cloud.svg") no-repeat center / contain;
+  opacity: .10;
+  pointer-events: none;
+}
+.site-footer > .container { position: relative; z-index: 1; }
+.footer-brand, .footer-heading { color: #fff; }
+.footer-links a { color: var(--ink-soft); }
+.footer-links a:hover { color: #ff6670; }
+.footer-bottom { border-top-color: var(--line); color: #7e787c; }
+
+/* =====================================================
+   Komponen halaman lain (agar bisa dipakai di semua halaman)
+   ===================================================== */
+.page-header {
+  background-color: #0a0a0c;
+  background-image:
+    radial-gradient(ellipse 50% 90% at 90% 30%, rgba(193, 18, 31, .26), transparent 70%),
+    linear-gradient(180deg, #0c0c0f 0%, #08080a 100%);
+  background-size: auto, auto;
+  border-bottom-color: var(--crimson-deep);
+}
+.page-header h1 { color: #fff; }
+.page-header > .container > p:not(.status) { color: var(--ink-soft); }
+.toc a { color: var(--ink); background: rgba(255, 255, 255, .04); border-color: var(--sky-deep); }
+.toc a:hover { background: var(--crimson); border-color: var(--crimson); color: #fff; }
+main.container .section-title { color: #fff; }
+.card-title .bi { color: #ff6670; }
+.card .status { color: #ff6670; }
+.tag { color: var(--ink); background: rgba(255, 255, 255, .05); border-color: var(--sky-deep); }
+.table-wrap { background: var(--surface); border-color: var(--line); }
+.table-dark-gold { --bs-table-color: var(--ink); --bs-table-border-color: var(--line); }
+.table-dark-gold thead th { background: var(--crimson-deep); color: #fff; }
+.table-dark-gold tbody td { background: transparent; color: var(--ink); }
+.table-dark-gold tbody tr:nth-child(even) td { background: rgba(255, 255, 255, .03); }
+.callout { background: rgba(193, 18, 31, .10); border-color: rgba(193, 18, 31, .30); border-left-color: var(--crimson); color: var(--ink); }
+.check-list strong { color: #fff; }
+.check-list li::before { color: #ff6670; background: rgba(193, 18, 31, .16); border-color: rgba(193, 18, 31, .4); }
+.warn-list li::before { color: var(--cloud); background: rgba(223, 227, 230, .10); border-color: rgba(223, 227, 230, .3); }
+.ph-block { background: rgba(255, 255, 255, .03); border-color: var(--sky-deep); color: var(--ink-soft); }
+.ph-block strong { color: #fff; }
+.card .ph { background: rgba(223, 227, 230, .12); color: var(--cloud); }
+.card .text-muted { color: var(--ink-soft) !important; }
+.card-img-top { border-bottom-color: var(--line); }
+.profile-card { background: var(--surface); border-color: var(--line); box-shadow: 0 20px 50px rgba(0, 0, 0, .5); }
+.profile-side {
+  background-color: #0e0e11;
+  background-image: radial-gradient(ellipse 80% 70% at 50% 50%, rgba(193, 18, 31, .28), transparent 75%);
+  background-size: auto;
+  border-color: var(--line);
+}
+.biodata-photo { border-color: var(--cloud); box-shadow: 0 18px 40px rgba(193, 18, 31, .30); }
+.profile-name { color: #fff; }
+.profile-bio { color: var(--ink-soft); }
+.profile-divider { border-top-color: var(--line); }
+.contact-info li > i { color: var(--crimson); }
+.contact-label { color: var(--ink-soft); }
+.contact-value { color: var(--ink); }
+.contact-value a { color: #ff6670; }
+
+/* ---------- hiasan awan di header halaman (portofolio, materi, biodata) ---------- */
+.page-header { position: relative; overflow: hidden; }
+.page-header::after {
+  content: "";
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  width: 260px;
+  height: 175px;
+  margin-top: -88px;
+  background: url("../images/akatsuki-cloud.svg") no-repeat center / contain;
+  opacity: .20;
+  transform: scaleX(-1) rotate(6deg);
+  pointer-events: none;
+}
+.page-header > .container { position: relative; z-index: 1; }
+@media (max-width: 767.98px) {
+  .page-header::after { width: 160px; height: 108px; right: -20px; opacity: .14; }
+}
+
+/* ---------- materi: detail tambahan ---------- */
+main.container > .section-pad { border-bottom-color: var(--line); }
+main.container strong { color: #fff; }
+main.container section > p,
+.card-body p { color: var(--ink-soft); }
+.card-body p strong { color: #fff; }
+.card-body > p.status { color: #ff6670; }
+.table-dark-gold td:first-child { color: #fff; }
+.callout strong { color: #fff; }
+.callout em { color: var(--cloud); }
+
+/* ---------- biodata: detail tambahan ---------- */
+.profile-body .tag { color: var(--cloud); }
+.profile-bio { color: var(--ink-soft); }
+.contact-value a:hover { color: #fff; }
+
+/* ---------- index: dua kartu jelajah ---------- */
+.col-md-6:nth-child(2) > .card .icon-badge { background: rgba(223, 227, 230, .10); color: var(--cloud); }
+
+/* ---------- portofolio: daftar tugas dan proyek ---------- */
+.task-item, .project-card { background: var(--surface); border-color: var(--line); color: var(--ink); }
+.task-item:hover { border-color: var(--crimson); box-shadow: 0 18px 40px rgba(193, 18, 31, .22); }
+.task-num { -webkit-text-stroke-color: var(--crimson); }
+.task-body h3, .project-body h3 { color: #fff; }
+.task-item .ph { background: rgba(223, 227, 230, .12); color: var(--cloud); }
+.project-body p { color: var(--ink-soft); }
+.project-img { border-color: var(--line); }

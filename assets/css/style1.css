@@ -1,0 +1,109 @@
+
+/* ---------- banner utama ---------- */
+.banner {
+  background:
+    radial-gradient(ellipse 60% 80% at 15% 20%, var(--sky-deep) 0%, transparent 70%),
+    var(--sky);
+  padding-top: 20%;
+  padding-bottom: 20%;
+  color: var(--ink);
+}
+
+.banner1 {
+  background:
+    radial-gradient(ellipse 60% 80% at 15% 20%, var(--sky-deep) 0%, transparent 70%),
+    var(--sky);
+  padding-top: 10%;
+  padding-bottom: 10%;
+  color: var(--ink);
+}
+
+.banner2 {
+  background:
+    radial-gradient(ellipse 60% 80% at 15% 20%, var(--sky-deep) 0%, transparent 70%),
+    var(--sky);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 16%;
+  position: fixed;
+  color: var(--ink);
+}
+
+.banner3 {
+  background:
+    radial-gradient(ellipse 60% 80% at 15% 20%, var(--sky-deep) 0%, transparent 70%),
+    var(--sky);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  color: var(--ink);
+}
+
+.banner4 {
+  background:
+    radial-gradient(ellipse 60% 80% at 15% 20%, var(--sky-deep) 0%, transparent 70%),
+    var(--sky);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  padding-top: 15%;
+  padding-bottom: 16%;
+  position: fixed;
+  color: var(--ink);
+}
+
+/* ---------- kontak ---------- */
+.kontak {
+  background:
+    radial-gradient(ellipse at top left, var(--sky-deep), transparent 70%),
+    var(--sky);
+  background-size: cover;
+  padding-bottom: 20%;
+  padding-top: 20%;
+  color: var(--ink);
+}
+
+/* ---------- lingkaran ikon ---------- */
+.lingkaran {
+  display: inline-block;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  color: var(--cobalt);
+  background-color: #fff;
+  border: 2px solid var(--sky-deep);
+  margin: auto;
+}
+
+.lingkaran i {
+  position: relative;
+  top: 15px;
+}
+
+/* ---------- gambar ---------- */
+.crop-img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* ---------- heading ---------- */
+h1, h2 {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+
+/* ---------- warna cadangan ---------- */
+.banner,
+.banner1,
+.banner2,
+.banner3,
+.banner4 {
+  background-color: var(--sky);
+}
